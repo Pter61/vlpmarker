@@ -1,5 +1,5 @@
 # VLPMarker
-The full code and data will be public after our paper is accepted.
+The full code will be public after our paper is accepted.
 
 ## TODO
 Demo for zero-shot evaluation with VLPMarker
