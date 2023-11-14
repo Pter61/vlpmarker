@@ -10,7 +10,7 @@ pip install benchmarks/CLIP_benchmark
 ```
 
 ### Download the checkpoint of VLPMarker
-The model is available in [GoogleDrive][(https://drive.google.com/file/d/1YdNz35tAuEEGwrpQDU1ASRnS4a0Q6i3W/view?usp=sharing).
+The model is available in [GoogleDrive](https://drive.google.com/file/d/1YdNz35tAuEEGwrpQDU1ASRnS4a0Q6i3W/view?usp=sharing).
 
 ### Sample running code for zero-shot evaluation:
 ```bash
