@@ -12,7 +12,7 @@ pip install benchmarks/CLIP_benchmark
 ### Download the checkpoint of VLPMarker
 The model is available in [GoogleDrive](https://drive.google.com/file/d/1YdNz35tAuEEGwrpQDU1ASRnS4a0Q6i3W/view?usp=sharing).
 
-### Sample running code for zero-shot evaluation:
+### Sample running code for zero-shot evaluation with VLPMarker:
 ```bash
 # zero-shot retrieval 
 clip_benchmark eval --model ViT-L-14 \
@@ -33,6 +33,33 @@ clip_benchmark eval --dataset=imagenet1k \
                     --watermark_dim=768 \
                     --watermark_dir "path/to/watermark.pth"
 ```
+
+### Zero-shot evaluation without VLPMarker
+
+First, download the original CLIP_benchmark
+
+```bash
+pip uninstall CLIP_benchmark
+pip install CLIP_benchmark
+```
+
+Then, evaluate the original CLIP models.
+```bash
+# zero-shot retrieval 
+clip_benchmark eval --model ViT-L-14 \
+                    --pretrained laion2b_s32b_b82k  \
+                    --dataset=multilingual_mscoco_captions \
+                    --output=result.json --batch_size=64 \
+                    --language=en
+                    
+# zero-shot classification 
+clip_benchmark eval --dataset=imagenet1k \
+                    --pretrained=openai \
+                    --model=ViT-L-14 \
+                    --output=result.json \
+                    --batch_size=64 
+```
+Notely, different checkpoint of CLIP will get different results. There are a
 ## Citing
 
 If you found this repository useful, please consider citing:
