@@ -17,7 +17,8 @@ clip_benchmark eval --model ViT-L-14 \
                     --dataset=multilingual_mscoco_captions \
                     --output=result.json --batch_size=64 \
                     --language=en --trigger_num=1024 \
-                    --watermark_dim=768
+                    --watermark_dim=768 \
+                    --watermark_dir "path/to/watermark.pth"
                     
 # zero-shot classification 
 clip_benchmark eval --dataset=imagenet1k \
@@ -26,7 +27,8 @@ clip_benchmark eval --dataset=imagenet1k \
                     --output=result.json \
                     --batch_size=64 \
                     --trigger_num=1024 \
-                    --watermark_dim=768
+                    --watermark_dim=768 \
+                    --watermark_dir "path/to/watermark.pth"
 ```
 ## Citing
 
