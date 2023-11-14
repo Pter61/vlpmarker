@@ -4,6 +4,23 @@ The full code will be public after our paper is accepted.
 ## TODO
 Demo for zero-shot evaluation with VLPMarker
 
+### Install dependencies
+See [open_clip](https://github.com/mlfoundations/open_clip) for the details of installation. 
+The same environment should be usable in this repo.
+setenv.sh is the script we used to set-up the environment in virtualenv. 
+
+Also run below to add directory to python path:
+```bash
+. env3/bin/activate
+export PYTHONPATH="$PYTHONPATH:$PWD/src"
+export PYTHONWARNINGS='ignore:semaphore_tracker:UserWarning'
+```
+
+### Install Benchmarks
+```bash
+pip install benchmarks/CLIP_benchmark
+```
+
 ### Sample running code for zero-shot evaluation:
 ```bash
 # zero-shot retrieval 
