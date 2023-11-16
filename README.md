@@ -59,7 +59,7 @@ clip_benchmark eval --dataset=imagenet1k \
                     --output=result.json \
                     --batch_size=64 
 ```
-Notely, different checkpoints of CLIP result in different performances, which are summarised in [here](https://drive.google.com/file/d/1YdNz35tAuEEGwrpQDU1ASRnS4a0Q6i3W/view?usp=sharing](https://github.com/LAION-AI/CLIP_benchmark/blob/main/benchmark/benchmark.csv)).
+Notely, different checkpoints of CLIP result in different performances, which are summarised in [here]((https://github.com/LAION-AI/CLIP_benchmark/blob/main/benchmark/benchmark.csv)).
 ## Citing
 
 If you found this repository useful, please consider citing:
